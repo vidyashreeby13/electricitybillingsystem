@@ -1,37 +1,18 @@
-body{
-    font-family: Arial, sans-serif;
-    background:#f2f2f2;
-}
+function calculateBill() {
 
-.container{
-    width:350px;
-    margin:80px auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px gray;
-    text-align:center;
-}
+    let name = document.getElementById("name").value;
+    let units = Number(document.getElementById("units").value);
 
-input{
-    width:90%;
-    padding:10px;
-    margin:10px;
-}
+    let bill = 0;
 
-button{
-    background:green;
-    color:white;
-    padding:10px 20px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
+    if (units <= 100)
+        bill = units * 2;
+    else if (units <= 200)
+        bill = 200 + (units - 100) * 3;
+    else
+        bill = 500 + (units - 200) * 5;
 
-button:hover{
-    background:darkgreen;
-}
-
-h2{
-    color:blue;
+    document.getElementById("result").innerHTML =
+        "Customer Name: " + name +
+        "<br>Total Bill: ₹" + bill;
 }
