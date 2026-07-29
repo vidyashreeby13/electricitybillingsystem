@@ -1,37 +1,28 @@
 body{
     font-family: Arial, sans-serif;
-    background:#f2f2f2;
-}
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.container{
-    width:350px;
-    margin:80px auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px gray;
-    text-align:center;
-}
+<div class="container">
+    <h1>⚡ Electricity Billing System</h1>
 
-input{
-    width:90%;
-    padding:10px;
-    margin:10px;
-}
+    <label>Customer Name</label><br>
+    <input type="text" id="name"><br><br>
 
-button{
-    background:green;
-    color:white;
-    padding:10px 20px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
+    <label>Units Consumed</label><br>
+    <input type="number" id="units"><br><br>
 
-button:hover{
-    background:darkgreen;
-}
+    <button onclick="calculateBill()">Calculate Bill</button>
 
-h2{
-    color:blue;
-}
+    <h2 id="result"></h2>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
