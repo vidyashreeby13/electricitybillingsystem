@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Electricity Billing System</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<label>Customer Address</label><br>
+<input type="text" id="address"><br><br>
 
-<div class="container">
-    <h1>⚡ Electricity Billing System</h1>
+<label>Mobile Number</label><br>
+<input type="text" id="mobile"><br><br>
 
-    <label>Customer Name</label><br>
-    <input type="text" id="name"><br><br>
-
-    <label>Units Consumed</label><br>
-    <input type="number" id="units"><br><br>
-
-    <button onclick="calculateBill()">Calculate Bill</button>
-
-    <h2 id="result"></h2>
-</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+<label>Bill Date</label><br>
+<input type="date" id="date"><br><br>
